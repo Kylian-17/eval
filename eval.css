@@ -6,17 +6,26 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
 .titre {
   text-align: center;
 }
+
 #hero {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  /* 🔥 rétrécit le cadre */
+  width: 60%;
+  max-width: 600px;
+
   border: 10px solid azure;
   background-color: azure;
   margin: 20px auto;
+  padding: 20px;
 }
+
 #hero button {
   align-self: center;
   width: auto;
@@ -40,12 +49,28 @@ body {
   display: flex;
   gap: 20px;
 }
+
 #commentsamarche {
   text-align: center;
 }
+
 #info-importantes {
   text-align: center;
+
+  /* 🔥 AJOUT : cadre propre */
+  width: 60%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+
+  border: 4px solid #1400f5;
+  background-color: rgb(240, 245, 255);
+  border-radius: 10px;
 }
+
+/* ——————————————————————— */
+/* GRILLE DES 4 CARTES */
+/* ——————————————————————— */
 .grille {
   display: flex;
   justify-content: center;
@@ -65,4 +90,39 @@ body {
 
 .carte h3 {
   margin-top: 0;
+}
+
+/* ——————————————————————— */
+/* COMMENT ÇA MARCHE — SANS CADRES */
+/* ——————————————————————— */
+
+.undostres {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 🔥 ENLÈVE LES CADRES ICI */
+.undostres > div {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none; /* plus de cadre */
+}
+
+/* ——————————————————————— */
+/* HEADER & FOOTER */
+/* ——————————————————————— */
+
+header {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgb(240, 245, 255);
 }
